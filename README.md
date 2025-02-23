@@ -15,7 +15,7 @@ Application for filtration and inviting users
 
   
 
-<img src="./public/previw.png" width="400" />
+<img src="./public/preview.png" width="400" />
 
   
 
