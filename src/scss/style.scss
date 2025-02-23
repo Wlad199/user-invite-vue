@@ -1,0 +1,201 @@
+body {
+	background-color: #fff3ce;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-color: #fff;
+	width: 400px;
+	height: 600px;
+	padding: 40px;
+	border-radius: 20px;
+	margin: 40px 0;
+	display: flex;
+	flex-direction: column;
+
+	@media (max-width: 400px) {
+		padding: 15px;
+		width: 300px;
+	}
+}
+
+.search {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	outline: 1px solid #a7a7a7;
+	border-radius: 5px;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+
+	input {
+		border: none;
+		flex: 1 1 auto;
+		height: 100%;
+
+		&:focus-visible {
+			outline: none;
+		}
+	}
+}
+
+.user {
+	&__list {
+		flex: 1 1 auto;
+		overflow-x: hidden;
+
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+
+
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-bottom: 10px;
+
+		@media (max-width: 400px) {
+			gap: 8px;
+		}
+	}
+
+}
+
+
+//? user-item  =================//
+
+.user-item {
+
+	&__image {
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+
+		@media (max-width: 400px) {
+			height: 40px;
+			width: 40px;
+		}
+	}
+
+	&__info {
+		flex: 1 1 auto;
+	}
+
+	&__name {
+		font-weight: 600;
+	}
+
+	&__email {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+		color: #575757;
+
+		p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 187px;
+			font-size: 14px;
+
+			@media (max-width: 400px) {
+				max-width: 150px;
+			}
+		}
+	}
+
+	&__add {
+		height: 35px;
+
+		svg {
+			height: 35px;
+			width: 35px;
+		}
+
+		color: #6f6f6f;
+		transition: all 0.1s ease 0s;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+//? button =================//
+
+.button {
+	background-color: #e43e30;
+	border-radius: 10px;
+	color: #fff;
+	transition: all 0.2s ease 0s;
+
+	&:hover {
+		background-color: #c02518;
+	}
+
+	&__send {
+		height: 60px;
+		margin-top: 20px;
+	}
+}
+
+.skeleton-list {
+	flex: 1 1 auto;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+
+// ? success =================//
+
+.success-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 60px;
+
+	div {
+		height: 120px;
+		width: 120px;
+		background-color: #2bb673;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		margin-bottom: 30px;
+
+		svg {
+			color: #fff;
+			height: 100px;
+			width: 100px;
+		}
+
+	}
+
+	h2 {
+		font-size: 22px;
+		font-weight: 600;
+		padding-bottom: 20px;
+	}
+
+	p {
+		padding-bottom: 50px;
+	}
+}
+
+.button {
+
+	&__success {
+		height: 50px;
+		width: 150px;
+	}
+}
